@@ -2,12 +2,6 @@
 projet de fin de formation
 
 
- site web - CONCRETION 
------------------------
-
-Url : http://concretion.briac-ferte.com/
-
-
 ## Présentation
 
 Mon projet de fin de formation est un faux site de formation video.
