@@ -1,0 +1,37 @@
+<div class='dashboard'>
+    <h2>Profil de <?php echo htmlspecialchars($_SESSION['username']); ?>
+        <?php if ($_SESSION['IsAdmin'] == 1) { ?>
+        <span class="adminBtn">Admin</span>
+        <?php } ?>
+    </h2>
+
+    <section>
+        <?php include "../controllers/admin.php" ?>
+
+    </section>
+
+
+    <section class=succesUnlocked>
+        <h3>Mes Formations Validées :</h3>
+
+        <table>
+        
+            <tr>
+                <th>Formations : </th>
+                <th>Effectué le :</th>
+            </tr>
+            <?php foreach($formations as $formation): ?>
+            <tr>
+                <td><?= htmlspecialchars($formation['name']); ?></td>
+                <td><?= htmlspecialchars($formation['created_at']); ?></td>
+            </tr>
+            <?php endforeach; ?>
+        </table>
+
+        
+
+    </section>
+
+
+
+</div>

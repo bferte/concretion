@@ -1,0 +1,48 @@
+<h3>Tableau de Bord :</h3>
+<div class="dashVids">
+
+
+    <section class="addVid">
+        <h4>Ajouter une video</h4>
+
+        <form action="../controllers/upload.php" method="post" enctype="multipart/form-data">
+            Charger une video :
+            <input type="file" name="the_file" id="fileToUpload">
+
+            <div class="uploadVids">
+                <input class='inputUpload' type="text" name="name" placeholder="Nom de votre video">
+                <textarea class='inputUpload' name="content" rows="4"
+                    placeholder="Description de votre video"></textarea>
+                <input class="btnUpload" type="submit" name="submit" value="Valider">
+            </div>
+
+        </form>
+
+    </section>
+
+    <section class="editVid">
+        <h4>Videos en ligne</h4>
+
+        <table>
+
+            <tr>
+                <th>Formations : </th>
+                <th></th>
+            </tr>
+            <?php foreach($videos as $video): ?>
+            <tr>
+                <td><?= $video['name'] ?></td>
+                <td>
+
+                    
+                    <a class="remove" href="delete_video.php?id=<?= $video['id'] ?>"><i class="fas fa-times"></i></a>
+                </td>
+
+
+            </tr>
+            <?php endforeach; ?>
+        </table>
+
+    </section>
+
+</div>

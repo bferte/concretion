@@ -1,0 +1,823 @@
+/*********************************
+                 Global
+**********************************/
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: "Open Sans", sans-serif;
+    background-color: #23538e;
+    color: #3c3b37
+}
+
+h2 {
+    color: #193f6e;
+    font-family: 'Montserrat', sans-serif;
+}
+
+h3 {
+    color: #333333;
+}
+
+button,
+.lienBtn {
+    border: none;
+    border-radius: 25px;
+    color: white;
+    background-color: #193f6e;
+    padding: 15px 45px;
+    margin: 10px;
+    font-weight: 700;
+
+}
+
+.hide {
+    display: none;
+}
+
+
+/*********************************
+                 Header
+**********************************/
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 15px;
+    background-color: white;
+}
+
+header .fa-bars {
+    margin: 10px;
+    color: #333333;
+}
+
+.lienLogo {
+    width: 100%;
+    text-align: center;
+}
+
+.logoText {
+    width: 55%;
+}
+
+.menu {
+    width: 100%;
+}
+
+.menu div {
+    display: flex;
+    flex-direction: column;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #333333;
+    font-size: 2rem;
+    text-align: center;
+    margin: 15px 0;
+
+}
+
+.menu a i {
+    display: block;
+    color: #193f6e;
+    font-size: 3rem;
+
+}
+
+.menuContent {
+    align-items: center;
+}
+
+header hr {
+    margin: 30px 0;
+
+}
+
+.userLogBef {
+    align-items: center;
+    
+}
+
+.userLogBef a {
+
+    width: 150px;
+    margin: 10px;
+    height: 30px;
+    border: 1px solid #1f579bfd;
+    background-color: rgb(245, 245, 245);
+    border-radius: 5px;
+}
+
+#btnLogout {
+    border-radius: 10px;
+    margin: auto;
+    background-color: rgb(247, 58, 58);
+    width: 35%;
+    font-size: 1.8rem;
+    padding: 5px;
+    color: white;
+}
+
+.userLoged {
+    margin-top: 7px;
+}
+
+.adminBtn {
+    border: 1px solid rgb(247, 58, 58);
+    border-radius: 10px;
+    margin: auto;
+    background-color: white;
+    width: 35%;
+    font-size: 1.3rem;
+    padding: 1px 2px;
+    color: rgb(247, 58, 58);
+}
+
+
+
+
+
+/*********************************
+                 Main
+**********************************/
+main {
+    background-color: white;
+
+}
+
+
+
+
+/*********************************
+                 Footer
+**********************************/
+footer {
+    background-color: #193f6e;
+}
+
+.footerListe {
+    padding: 15px 0 0 0;
+    margin-top: 0;
+
+}
+
+.footerListe li {
+    list-style: none;
+    text-align: center;
+    margin: 10px 0;
+
+}
+
+.footerListe a {
+    color: white;
+    text-decoration: none;
+}
+
+.footerFin {
+    background-color: #23538e;
+}
+
+.footerFin img {
+    width: 60%;
+    display: block;
+    margin: auto;
+}
+
+.containerListeFormation {
+    width: 970px;
+    margin: auto;
+
+}
+
+/*++++++++++++++++ Page index ++++++++++++++*/
+#startMain
+{
+    background-image: url("../img/cutcut.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 200px;
+}
+
+
+.main-content {
+    max-width: 90%;
+    margin: auto;
+}
+/**/
+#slider {
+
+    
+    
+    display: none;
+   
+
+}
+
+#slide {
+    height:auto;
+    max-width: 100%;
+    width: 300px;
+    margin: 30px;
+    display: block;
+    padding: 10px;
+    border: 2px solid rgb(209, 204, 204);
+    border-radius: 10px;
+    background-color: rgba(240, 231, 231, 0.842);
+}
+
+
+
+#commandsSlide {
+
+    display: none;
+
+}
+
+.slideBtn {
+    padding: 25px 25px;
+    position: relative;
+    bottom: 30px;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#gifExplain
+{
+    width: 95%;
+    margin: 2%;
+    padding: 1%;
+    border: 2px solid rgb(209, 204, 204);
+    border-radius: 10px;
+    background-color: rgba(240, 231, 231, 0.842);
+}
+
+/*+++++++ Page liste login/signup ++++++++++*/
+
+
+.form {
+    margin: auto;
+}
+
+.form .inputLog {
+    padding: 5px;
+    border: 1px solid #386296;
+    border-radius: 10px;
+    box-shadow: 0px 0px 1px 0px rgba(45, 119, 216, 0.75);
+}
+
+.btnLog {
+    background-color: #193f6e;
+    color: white;
+    border: 1px solid #193f6e;
+    border-radius: 10px;
+    padding: 5px 10px;
+}
+
+.notifLog {
+    text-align: center;
+    
+    width: auto;
+    color: #e63939;
+    margin: 0 20px 20px 20px;
+    border-radius: 5px;
+}
+
+/*+++++++ Page liste formation ++++++++++*/
+
+.onlyPc {
+    display: none;
+}
+
+.videos-list {
+    padding: 10px;
+}
+
+.onlyPc li {
+    list-style-type: none;
+}
+
+.onlyPc a {
+    text-decoration: none;
+    color: #333333;
+}
+
+.onlyPc h3 {
+    color: #193f6e;
+}
+
+.onlyPc .videoLi {
+    padding: 10px;
+    margin: 15px;
+    box-shadow: 0 2px 8px 2px rgba(20, 23, 28, .15);
+}
+
+.onlyPc .videoLi:hover {
+    box-shadow: 0 2px 8px 5px rgba(15, 17, 20, 0.212);
+}
+
+.onlyTabPhone,
+.onlyUser {
+    height: 150px;
+    padding: 20px;
+    margin: 10px;
+}
+
+.onlyTabPhone p,
+.onlyUser p {
+    margin: 20px 30px;
+
+    border: 2px solid #4981c5;
+    padding: 10px;
+    border-radius: 10px;
+    color: #333333;
+}
+
+/*+++++++ Page liste profil-admin ++++++++++*/
+
+.dashboard {
+    padding: 30px;
+}
+
+.dashboard table {
+    border-collapse: collapse;
+}
+
+.dashboard table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.dashboard td,
+.dashboard th {
+
+    border: 1px solid rgb(185, 178, 178);
+    padding: 5px;
+}
+
+.dashVids {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.addVid {
+    border: 2px solid rgb(185, 178, 178);
+    padding: 5px;
+    width: 320px;
+    overflow: hidden;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.editVid {
+    border: 2px solid rgb(185, 178, 178);
+    padding: 5px;
+    width: 320px;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+.uploadVids {
+    display: flex;
+    flex-direction: column;
+}
+
+.inputUpload {
+    width: 200px;
+}
+
+.btnUpload {
+    background-color: #193f6e;
+    color: white;
+    border: 1px solid #193f6e;
+    border-radius: 10px;
+    padding: 5px 10px;
+    width: 100px;
+    margin-top: 10px;
+}
+
+
+
+/*++++++++++++++++ Page video ++++++++++++++*/
+
+video {
+    width: 70%;
+    pointer-events: none;
+}
+
+.videoDetail {
+    padding: 30px;
+
+
+}
+
+.videoContent {
+    box-shadow: 0px 0px 9px 1px rgba(0, 0, 0, 0.10);
+    border-radius: 5px;
+    width: 50%;
+    padding: 10px;
+
+}
+
+/* The Modal (background) */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+/* Modal Header */
+.modal-header {
+    padding: 2px 16px;
+    background-color: #193f6e;
+    color: white;
+}
+
+.modal-header h2 {
+    color: white;
+}
+
+/* Modal Body */
+.modal-body {
+    padding: 2px 16px;
+}
+
+/* Modal Footer */
+.modal-footer {
+    padding: 2px 16px;
+    background-color: #193f6e;
+    color: white;
+    height: 50px;
+    display: flex;
+}
+
+.modal-footer a {
+    color: white;
+    font-size: 1.8rem;
+    background-color: #23538e;
+    padding: 5px 10px;
+    border: 1px solid grey;
+    border-radius: 5px;
+    text-decoration: none;
+    margin: 5px;
+}
+
+/* Modal Content */
+.modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: 15%;
+    padding: 0;
+    border: 1px solid #888;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+
+.modal-content img {
+    width: 8%;
+}
+
+.modal-content span {
+    font-size: 2rem;
+    color: #193f6e;
+}
+
+/* Add Animation */
+@keyframes animatetop {
+    from {
+        top: -300px;
+        opacity: 0
+    }
+
+    to {
+        top: 0;
+        opacity: 1
+    }
+}
+
+/* Progress Bar */
+
+progress {
+    background-color: #569aec;
+    display: block;
+    padding: 4px;
+    border-radius: 5px;
+
+}
+
+
+/*++++++++++++++++ Page contact ++++++++++++++*/
+
+.contactForm
+    {
+        display: flex;
+        flex-direction: column;
+        width: 40%;
+        margin: auto;
+        padding: 10px;
+    }
+.contactForm label
+{
+    margin-top: 5px;
+}
+.contactForm input, .contactForm textarea
+{
+    border-radius: 5px;
+}
+.contactForm input
+{
+    margin-top: 5px;
+}
+
+
+
+
+
+
+/*=======================================================
+                    MEDIA QUERIES
+=========================================================*/
+
+
+/*========================= TABLETTE ======================*/
+
+
+@media screen and (min-width: 768px) {
+    /****************************************************
+                         Header
+     *****************************************************/
+
+    .logoText {
+        display: block;
+        text-align: left;
+        width: 315px;
+    }
+
+    .menu {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .menu div {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .userLog {
+        margin-right: 20px;
+    }
+
+    .menu .userLogBef {
+
+        width: 100%;
+        display: flex;
+    }
+
+    .userLogBef a {
+        width: 15%;
+
+
+    }
+
+    header hr {
+        margin: 5px 0;
+    }
+
+    #btnLogout {
+        margin-left: 10px;
+        width: 15%;
+        font-size: 1.5rem;
+    }
+
+    /****************************************************
+                         main
+     *****************************************************/
+    /*++++++++++++++++ Page index ++++++++++++++*/
+    #startMain
+    {
+        height: 400px;
+    }
+    .main-content {
+        height: 10px;
+    }
+
+    .dip {
+         padding: 20px;
+        border-radius: 10px;
+        width: 510px;
+        background-color: rgb(255, 255, 255);
+        position: relative;
+        bottom: 180px;
+        border: 1px solid #b6b6b5;
+    }
+
+    .dip h1 {
+        margin-top: 0;
+    }
+
+    .dip p {
+        margin-bottom: 0;
+    }
+    #slide
+    {
+      width: 700px;  
+    }
+
+
+    /*++++++++++ page profil/admin ++++++++++++*/
+
+    .dashVids {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .addVid {
+
+        margin-bottom: 0;
+    }
+    /*++++++++++ page contact ++++++++++++*/
+
+    .subForm
+    {
+        width: 45%;
+    }
+
+
+
+    /****************************************************
+                         Footer
+     *****************************************************/
+    .footerListe {
+        font-size: 1.8rem;
+    }
+
+    .footerFin img {
+        width: 40%;
+    }
+
+
+
+
+
+
+}
+
+/*========================= DESKTOP ======================*/
+
+
+@media screen and (min-width: 1025px) {
+
+
+
+
+    /****************************************************
+                        HEADER
+    *****************************************************/
+    header {
+        display: flex;
+        flex-direction: row;
+        box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2), 0px 4px 5px 0px rgba(0, 0, 0, 0.14);
+        margin-bottom: 10px;
+        padding: 0;
+
+    }
+
+    .lienLogo {
+        width: 13%;
+    }
+
+    .logoText {
+        width: 170px;
+
+    }
+
+    .menu {
+        flex-direction: row;
+        justify-content: space-between;
+
+        width: 70%;
+    }
+
+    .menuContent {
+        width: 600px;
+        /*60%*/
+    }
+
+    .menuContent a {
+        width: 150px;
+    }
+
+    .menu hr {
+        display: none;
+    }
+
+    .menu .userLog {
+        width: 30%;
+        margin: 0 0 0 50px;
+    }
+
+    .menu .userLog a {
+        width: 50%;
+
+    }
+
+    #btnLogout {
+        margin-left: 10px;
+        width: 100px;
+        font-size: 1.5rem;
+    }
+
+
+    /****************************************************
+                         Main
+     *****************************************************/
+    /*++++++++++++++++ Page index ++++++++++++++*/
+    #startMain
+    {
+        height: 500px;
+    }
+    #index
+    {
+        max-width: 1180px;
+        margin: auto;
+    }
+    #slide
+    {
+        width: 1115px;
+    }
+    #slider {
+
+    
+        margin: auto;
+        display: flex;
+        justify-content: center;
+    
+    }
+    #commandsSlide {
+
+        display: flex;
+        justify-content: center;
+    
+    }
+    #gifExplain
+    {
+        display: none;
+    }
+    /*++++++++++ page signup ++++++++*/
+    .notifLog {
+        width: 40%;
+        margin: auto;
+        padding: 10px;
+    }
+
+    /*+++++++ Page liste formation ++++++++++*/
+
+    .onlyPc {
+        display: block;
+    }
+
+    .onlyTabPhone {
+        display: none;
+    }
+    /*+++++++ Page liste contact ++++++++++*/
+    .contactSection
+    {
+        width: 40%;
+        max-width: 1180px;
+        margin: auto;
+    }
+    
+
+
+    /****************************************************
+                        Footer
+    *****************************************************/
+
+    .footerFin img {
+        width: 15%;
+    }
+
+
+
+
+}

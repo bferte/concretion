@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 23.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 1280 1024" style="enable-background:new 0 0 1280 1024;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#23538E;}
+	.st1{fill:none;}
+	.st2{fill:#FFFFFF;}
+	.st3{font-family:'MyriadPro-Regular';}
+	.st4{font-size:107px;}
+	.st5{fill:#193F6E;}
+</style>
+<g>
+	<rect x="-8.5" y="-3.5" class="st0" width="1293" height="1032"/>
+	<path d="M1284-3v1031H-8V-3H1284 M1285-4H-9v1033h1294V-4L1285-4z"/>
+</g>
+<rect x="120" y="297" class="st1" width="1105" height="313"/>
+<text transform="matrix(1 0 0 1 120 372.9692)" class="st2 st3 st4">Comment ça fontionne ?</text>
+<path class="st2" d="M1068.6,742H232.4c-12.9,0-23.4-10.5-23.4-23.4v-70.2c0-12.9,10.5-23.4,23.4-23.4h836.2
+	c12.9,0,23.4,10.5,23.4,23.4v70.2C1092,731.5,1081.5,742,1068.6,742z"/>
+<path class="st0" d="M1047.9,723H253.1c-10.5,0-19.1-8.5-19.1-19.1v-40.8c0-10.5,8.5-19.1,19.1-19.1h794.8
+	c10.5,0,19.1,8.5,19.1,19.1v40.8C1067,714.5,1058.5,723,1047.9,723z"/>
+<g>
+	<path class="st5" d="M1019.8,709H282.2c-7.3,0-13.2-5.9-13.2-13.2v-24.7c0-7.3,5.9-13.2,13.2-13.2h737.7c7.3,0,13.2,5.9,13.2,13.2
+		v24.7C1033,703.1,1027.1,709,1019.8,709z"/>
+</g>
+</svg>

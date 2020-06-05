@@ -1,0 +1,51 @@
+<div class="onlyPc">
+  <?php if (!empty($_SESSION['username'])){ ?>
+  <section class="containerListeFormation">
+    <ul class="videos-list">
+      <?php foreach($videos as $video): ?>
+      <!-- Lien vers video détaillé -->
+      <a href="<?= $path ?>controllers/video.php?id=<?= intval($video['idVideo']) ?>">
+        <li class="videoLi">
+          <h3>
+
+            <?= htmlspecialchars($video['name']) ?>
+
+          </h3>
+
+          <p>
+            <?= htmlspecialchars($video['content']) ?>
+          </p>
+
+          <small>
+            Uploadé par <?= htmlspecialchars($video['username']) ?>
+          </small>
+        </li>
+      </a>
+
+      <?php endforeach; ?>
+    </ul>
+
+
+
+  </section>
+
+  <?php } ?>
+<!-- si utilisateur pas connecté -->
+  <?php if (empty($_SESSION['username'])){ ?>
+  <div class="onlyUser">
+    <p>Veuillez créer un compte et vous identifier pour poursuivre dans cette section.</p>
+  </div>
+
+  <?php } ?>
+
+<!-- Si utilisateur sur tel ou tablette -->
+
+</div>
+<div class="onlyTabPhone">
+
+  <p>Cette section du site nécessite d'etre visualisée via un PC muni d'un clavier.
+  </p>
+
+
+
+</div>

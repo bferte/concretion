@@ -1,0 +1,51 @@
+<!-- Modal -->
+<div id="myModal" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+        <div class="modal-header">
+            <span class="close">&times;</span>
+            <h2>Félicitations !</h2>
+        </div>
+        <div class="modal-body">
+            <p>Vous avez validé la formation : <span><?= htmlspecialchars($video['name']);?></span> </p>
+            <img src="../img/congrat.svg" alt="image de validation">
+        </div>
+        <div class="modal-footer">
+            <a href="<?= $path ?>index.php">Accueil</a>
+            <a href="<?= $path ?>/controllers/formation.php">Voir une autre formation</a>
+        </div>
+    </div>
+
+</div>
+
+<!--- video --->
+<section class="videoDetail">
+    <h2><?= htmlspecialchars($video['name']);?></h2>
+
+
+    <article id="videoArea">
+        <video src="../videos/<?= htmlspecialchars($video['file_name']);?> " id="myVideo"></video>
+        <label id="progressLabel" for="progressBar"></label>
+        <progress id="progressBar" max="0" value="0"></progress>
+        <p class="videoContent">
+            <?= htmlspecialchars($video['content']);?>
+        </p>
+
+
+    </article>
+
+
+
+
+
+    <div id="resultat">
+        
+    </div>
+</section>
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="../js/video.js"></script>
+<script src="../js/modal.js"></script>

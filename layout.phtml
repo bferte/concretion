@@ -1,0 +1,121 @@
+<?php
+
+$path = $template !== 'index' ? '../' : '';
+
+// Démarrage du module PHP de gestion des sessions.
+if (session_status() == PHP_SESSION_NONE) {
+	session_start();
+}
+
+?>
+
+
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/svg" href="<?= $path ?>img/logo1encadre.svg">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+    <link rel="stylesheet" href="<?= $path ?>css/normalize.css">
+    <link rel="stylesheet" href="<?= $path ?>css/style.css">
+    <title>Concrétion</title>
+</head>
+
+<body>
+    <!------------------------------
+                Header
+    -------------------------------->
+    <header>
+        <a href="#" class="lienLogo">
+            <img src="<?= $path ?>img/logotxt.svg" alt="logo concretion" class="logoText">
+        </a>
+        <nav class="menu">
+            <div class="menuContent">
+                <a href="<?= $path ?>index.php">
+                    <i class="fas fa-home"></i>
+                    Accueil
+                </a>
+                <a href="<?= $path ?>controllers/formation.php">
+                    <i class="fas fa-tv"></i>
+                    Formations Videos
+                </a>
+                
+
+                <a href="<?= $path ?>controllers/contact.php">
+                    <i class="far fa-envelope"></i>
+                    Nous Contacter
+                </a>
+            </div>
+
+
+
+            <hr />
+
+            <div class="userLog">
+                <div class="userLogBef">
+                    <?php if (empty($_SESSION)){ ?>
+                <a id='BtnLog' href="<?= $path ?>controllers/login.php#login">Connexion</a>
+                <a href="<?= $path ?>controllers/signup.php#signup">Inscription</a>
+
+                <?php } ?>
+                </div>
+                
+
+                <!-- Profil -->
+                 
+                <?php if (!empty($_SESSION)){ ?>
+                
+                    <a href="<?= $path ?>controllers/profil.php">
+                    <?php if ($_SESSION['IsAdmin'] == 1) { ?>
+                        <span class="adminBtn">Admin</span>
+                    <?php } ?>
+                    <p class="userLoged"><i class="far fa-user"></i> <?= $_SESSION['username'] ;?></p>
+                    </a>
+                    <a href="<?= $path ?>controllers/logout.php" id="btnLogout">Déconnexion</a>
+                <?php } ?>
+                
+            </div>
+
+
+
+        </nav>
+
+
+        </nav>
+
+
+    </header>
+    <!------------------------------
+                Main
+    -------------------------------->
+    <main>
+                     
+        <?php include "templates/$template.phtml" ?>
+
+
+    </main>
+    <!------------------------------
+                Footer
+    -------------------------------->
+    <footer>
+        <section>
+            <ul class="footerListe">
+                <li><a href="<?= $path ?>index.php">Accueil</a></li>             
+                <li><a href="<?= $path ?>controllers/formation.php">Formations Videos</a></li>
+                <li><a href="<?= $path ?>controllers/contact.php">Nous Contacter</a></li>
+
+            </ul>
+        </section>
+        <section class="footerFin">
+            <img src="<?= $path ?>img/logotxtBlanc.svg" alt="Logo concretion">
+        </section>
+
+
+    </footer>
+
+</body>
+
+</html>

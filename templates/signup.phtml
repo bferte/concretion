@@ -1,0 +1,54 @@
+
+<?php
+if(isset($errorMsg))
+{
+ foreach($errorMsg as $error)
+ {
+ ?>
+  <div class="notifLog">
+   <strong>Attention ! <?php echo $error; ?></strong>
+  </div>
+    <?php
+ }
+}
+if(isset($registerMsg))
+{
+?>
+ <div class="notifLog">
+  <strong><?php echo $registerMsg; ?></strong>
+ </div>
+<?php
+}
+?> 
+<!--erreur en js-->
+
+<div id="erreurForm" class='notifLog'></div>
+
+
+<!--  -->
+<form action="../controllers/signup.php" method="post">
+    <table class="form">
+        <tr>
+
+            <td><input class="inputLog usernameField" type="text" name="username" placeholder="Identifiant"></td>
+        </tr>
+        <tr>
+            <td><input class="inputLog emailField" type="text" name="email" placeholder="E-Mail"></td>
+        </tr>
+        <tr>
+            <td><input class="inputLog passwordField" type="password" name="password" placeholder="Mot de Passe"></td>
+        </tr>
+        <tr>
+            <td><input class="inputLog passwordField" type="password" name="confirmPassword" placeholder="Confirmer le mot de passe">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input class="btnLog" type="submit" name="register" value="Inscription">
+                <input class="btnLog" type="reset" name="reset" value="Annuler">
+            </td>
+        </tr>
+    </table>
+</form>
+
+<script src="../js/validationSignup.js"></script>
