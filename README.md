@@ -3,6 +3,10 @@ projet de fin de formation
 
 http://concretion.briac-ferte.com/
 
+Profil utilisable pour la decouverte du site :
+          identifiant  : alfred
+          mot de passe : dur
+
 
 ## Présentation
 
